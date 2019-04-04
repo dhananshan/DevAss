@@ -10,16 +10,16 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+		"capabilities" : {
+			"completionProvider" : {
+				"resolveProvider": "true",
+				"triggerCharacters": [ "." ]
 			}
-		]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
