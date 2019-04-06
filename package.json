@@ -16,14 +16,20 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.devass",
+				"title": "DevAss"
+			},
+			{
+				"command": "extension.google",
+				"title": "Google"
 			}
 		],
-		"capabilities" : {
-			"completionProvider" : {
+		"capabilities": {
+			"completionProvider": {
 				"resolveProvider": "true",
-				"triggerCharacters": [ "." ]
+				"triggerCharacters": [
+					"."
+				]
 			}
 		}
 	},
@@ -40,5 +46,8 @@
 		"tslint": "^5.12.1",
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"open": "6.0.0"
 	}
 }
